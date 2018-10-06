@@ -1,5 +1,5 @@
 use mydb;
-
+-- Добавить договор
 DROP PROCEDURE IF EXISTS `add_contract`;
 DELIMITER //
 CREATE PROCEDURE `add_contract`(IN `Номер договора` VARCHAR(50),

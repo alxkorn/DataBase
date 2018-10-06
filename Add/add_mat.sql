@@ -1,5 +1,5 @@
 use mydb;
-
+-- Добавить сырье
 DROP PROCEDURE IF EXISTS `add_mat`;
 DELIMITER //
 CREATE PROCEDURE `add_mat`(IN `Наименование` VARCHAR(45),

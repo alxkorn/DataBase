@@ -1,5 +1,5 @@
 use mydb;
-
+-- Добавить отдел
 DROP PROCEDURE IF EXISTS `add_depart`;
 DELIMITER //
 CREATE PROCEDURE `add_depart`(IN `Наименование` VARCHAR(45))

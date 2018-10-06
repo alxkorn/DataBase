@@ -1,4 +1,5 @@
 use mydb;
+-- Добавить товар
 
 DROP PROCEDURE IF EXISTS `add_good`;
 DELIMITER //

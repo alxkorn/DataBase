@@ -1,5 +1,5 @@
 use mydb;
-
+-- Добавить в список сырья в товаре
 DROP PROCEDURE IF EXISTS `add_good_mat`;
 DELIMITER //
 CREATE PROCEDURE `add_good_mat`(IN `Товар_idТовар` INT,

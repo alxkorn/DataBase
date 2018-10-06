@@ -1,4 +1,5 @@
 use mydb;
+-- Добавить работника
 
 DROP PROCEDURE IF EXISTS `add_worker`;
 DELIMITER //

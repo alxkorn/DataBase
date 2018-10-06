@@ -1,5 +1,5 @@
 use mydb;
-
+-- Добавить в запись перевозчиков
 DROP PROCEDURE IF EXISTS `add_contract_delivery_record`;
 DELIMITER //
 CREATE PROCEDURE `add_contract_delivery_record`(IN `Договор_idДоговор` INT,

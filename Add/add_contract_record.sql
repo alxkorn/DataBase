@@ -1,5 +1,5 @@
 use mydb;
-
+-- Добавить товар в список товаров в договоре
 DROP PROCEDURE IF EXISTS `add_contract_good_record`;
 DELIMITER //
 CREATE PROCEDURE `add_contract_good_record`(IN `Договор_idДоговор` INT,
