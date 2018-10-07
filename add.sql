@@ -120,7 +120,7 @@ END//
 DELIMITER ;
 
 
---Добавить нормативный документ
+-- Добавить нормативный документ
 DROP PROCEDURE IF EXISTS `add_regul_doc`;
 DELIMITER //
 CREATE PROCEDURE `add_regul_doc`(IN `Тип документа` VARCHAR(15),
