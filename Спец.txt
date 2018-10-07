@@ -64,12 +64,34 @@ mainwindow.ui
 		Tab with department (DepartmentTab)
 			Widget in tab with departmet (InternalDepartmentWidget)
 				Layout in widget (DepartmentLayout)
+					External widget (externaldepartment.ui)
+						Combo box to chose department (ChoseDepartmentIfExistsComboBox)
+						Line to input name of new dept (InputNameOfNewDepartmentIfNotExistsLine)
+						Button to apply changes in dept module (ApplyDepartmentButton)
+						Line to input new wopper (AddNewWopperNameLine)
+						Line to input sum of contract (InputSumOfWopperContractLine)
+						Button to apply changes in wopper module (ApplyWopperButton)
 				
 		Tab with document (DocumentTab)
 			Widget in tab with document (InternalDocumentWidget)
 				Layout in widget (DocumentLayout)
-				
+					External widget (externaldocument.ui)
+						Line to input document name (DocumentNameLine)
+						Line to input sum of document (DocumentSumLine)
+						Line to input name of units (UnitNameLine)
+						Table with all docs (DocumentTableWidget)
+						Button to upload to DB (UploadToDBButton)
+						
+					
 		Tab with materials (MaterialTab)
 			Widget in tab with materials (InternalMaterialWidget)
 				Layout in widget (MaterialLayout)
-		
+					External widget (externalmaterial.ui)
+						Line to input name of materials (MaterialNameLine)
+						Line to input sum of materials (MaterialSumLine)
+						Line to input units of materials (UnitsLine)
+						Button to show tables (ApplyToShowTableWidget)
+						Table of materials (MaterialsTableWidget)
+						Button to upload to DB (UploatToDBButton)
+						
+						
