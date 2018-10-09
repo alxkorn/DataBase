@@ -12,6 +12,22 @@ select `Покупатель`.`idПокупатель` from `Покупател�
 end//
 delimiter ;
 
+drop procedure if exists `goodid_by_name`;
+delimiter //
+create procedure `goodid_by_name` (in `Наименование товара` varchar(150))
+begin
+    select `Товар`.`idТовар` from `Товар` where `Товар`.`Наименование`=`Наименование Товара`;
+end//
+delimiter ;
+
+drop procedure if exists `contractid_by_number`;
+delimiter //
+create procedure `contractid_by_number` (in `ContractNumber` varchar(150))
+begin
+    select `Договор`.`idДоговор` from `Договор` where `Договор`.`Номер договора`=`ContractNumber`;
+end//
+delimiter ;
+
 DROP PROCEDURE IF EXISTS `contracts_between`;
 DELIMITER //
 CREATE PROCEDURE `contracts_between` (IN `StartDate` DATE,
@@ -123,7 +139,7 @@ DELIMITER //
 CREATE PROCEDURE `summa_zp_otdela`(IN `Название отдела` VARCHAR(45))
 BEGIN
 
-SELECT SUM(`Размер ЗП`) FROM 
+SELECT SUM(`Размер ЗП`) AS `sum` FROM 
 `Отдел` NATURAL JOIN `Сотрудник`
 WHERE `Наименование`=`Название отдела`;
 END//
@@ -192,7 +208,7 @@ BEGIN
 SET @depart_id = NULL;
 select `Отдел`.`idОтдел` into @depart_id from `Отдел` where `Отдел`.`Наименование`= `Наименование отдела`;
 
-select * from `Сотрудник` where `Сотрудник`.`idОтдел`=@depart_id;
+select `ФИО`,`Размер ЗП` from `Сотрудник` where `Сотрудник`.`idОтдел`=@depart_id;
 
 END//
 delimiter ;
